@@ -5,4 +5,5 @@
     <string name="valor_em_euro">Valor em Euro</string>
     <string name="calcular">Calcular</string>
     <string name="informe_valor">Campo em branco! Informa um valor!</string>
+    <string name="valor_em_libras">Valor em Libras</string>
 </resources>
