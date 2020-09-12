@@ -1,46 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#68787878"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
         android:text="@string/qual_o_valor_em_real"
-        />
+        android:textColor="#E8031DA8"
+        android:textSize="32dp" />
+
     <EditText
+        android:id="@+id/edit_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text="" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
         android:text="@string/valor_em_dolar"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/valor_em_dolar"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
         android:textSize="32dp"
-        android:text="@string/valor_em_euro"
         />
+
+    <TextView
+        android:id="@+id/text_dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_em_dolar" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_em_euro"/>
-    <Button
-        android:layout_width="match_parent"
+        android:text="@string/valor_em_euro"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/text_euro"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/calcular"/>
+        android:text="@string/valor_em_euro" />
+
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/calcular"
+        android:background="#9F2196F3"
+        />
 
 </LinearLayout>
