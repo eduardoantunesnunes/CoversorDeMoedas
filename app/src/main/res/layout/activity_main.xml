@@ -5,20 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#68787878"
+    android:layout_margin="20dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/qual_o_valor_em_real"
-        android:textColor="#E8031DA8"
+        android:gravity="center"
+        android:textColor="#E803A80B"
         android:textSize="32dp" />
 
     <EditText
         android:id="@+id/edit_value"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textAlignment="center"
+        android:inputType="number"
         android:text="" />
 
     <TextView
@@ -33,6 +38,8 @@
         android:id="@+id/text_dolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/valor_em_dolar" />
 
     <TextView
@@ -45,6 +52,8 @@
         android:id="@+id/text_euro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/valor_em_euro" />
     <TextView
         android:layout_width="wrap_content"
@@ -56,16 +65,19 @@
         android:id="@+id/text_libras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginBottom="50dp"
         android:text="@string/valor_em_libras" />
 
 
     <Button
         android:id="@+id/button_calculate"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/calcular"
-        android:background="#9F2196F3"
+        android:textColor="#fff"
+        android:background="#9F2EC61D"
         />
 
 </LinearLayout>
